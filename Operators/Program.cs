@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Cache;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,6 +35,20 @@ namespace Operators
 
             Console.WriteLine((++num));
             Console.WriteLine((num));
+
+            Console.WriteLine("Enter your age: ");
+            int Age = Convert.ToInt32(Console.ReadLine());
+            //Ternary Operator
+            bool IsOlder = Age >= 27 ? true : false;
+            if (IsOlder) {
+
+                Console.WriteLine("You are older than me :-)");
+            }
+            else
+            {
+
+                Console.WriteLine("I am older than you :-(");
+            }
 
 
         }
